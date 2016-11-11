@@ -37,7 +37,7 @@ jarsigner -verbose -keystore (demo.keystore) -signedjar (demo_signed.apk) (demo.
 
 /说明：jarsigner是Jav">
 <meta property="og:image" content="http://ofns9d73a.bkt.clouddn.com/FEDEEC03B8E1479E74BA8D14BBC277B8.jpg">
-<meta property="og:updated_time" content="2016-11-10T15:59:25.000Z">
+<meta property="og:updated_time" content="2016-11-11T07:03:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于Android工程签名-重新签名，添加新的签名">
 <meta name="twitter:description" content="由于项目需要第三方加固混淆，会把之前带有签名的APK文件清除掉签名，于是需要再次签名。
@@ -202,6 +202,7 @@ jarsigner -verbose -keystore (demo.keystore) -signedjar (demo_signed.apk) (demo.
 </blockquote>
 <p>/<em>说明：jarsigner是Java的签名工具<br>-verbose参数表示：显示出签名详细信息<br>-keystore表示：使用当前目录中的demo.keystore签名证书文件。<br>-signedjar demor_signed.apk demo.apk demo.keystore 正式签名，三个参数中依次为签名后产生的文件demo_signed，要签名的文件demo.apk和签名文件users.
 </em>/</p>
+<a id="more"></a>
 <hr>
 <p>之后发现Android版本4.2以下及4.2的安装报错，告知是因为签名算法问题，AS打包签名文件算法为SHA1，用命令行打包算法为SHA256，就会出现问题。只有在命令行中指定签名算法。</p>
 <p>新的命令行</p>
