@@ -117,6 +117,31 @@
 
 
   <title> 归档 | NightWish </title>
+
+<script type="text/javascript">
+//判断访问终端
+var browser={
+    versions:function(){
+        var u = navigator.userAgent, app = navigator.appVersion;
+        return {
+            trident: u.indexOf('Trident') > -1, //IE内核
+            presto: u.indexOf('Presto') > -1, //opera内核
+            webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+            mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+            android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+            iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+            iPad: u.indexOf('iPad') > -1, //是否iPad
+            webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+            weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+            qq: u.match(/\sQQ/i) == " qq" //是否QQ
+        };
+    }(),
+    language:(navigator.browserLanguage || navigator.language).toLowerCase()
+}
+</script>
+
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -234,7 +259,7 @@
       
         
       
-      嗯..! 目前共计 3 篇日志。 继续努力。
+      嗯..! 目前共计 4 篇日志。 继续努力。
     </span>
 
     
@@ -355,6 +380,43 @@
 
     
 
+      
+      
+      
+
+      
+      
+
+      
+
+  <article class="post post-type-picture" itemscope itemtype="//schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2016/09/02/图片展示/" itemprop="url">
+              
+                <div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="http://ofns9d73a.bkt.clouddn.com/%E5%9B%BE%E7%89%87%E5%B1%95%E7%A4%BA1" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="http://ofns9d73a.bkt.clouddn.com/%E5%9B%BE%E7%89%87%E5%B1%95%E7%A4%BA2" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="http://ofns9d73a.bkt.clouddn.com/%E5%9B%BE%E7%89%87%E5%B1%95%E7%A4%BA6" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="http://ofns9d73a.bkt.clouddn.com/%E5%9B%BE%E7%89%87%E5%B1%95%E7%A4%BA4" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="http://ofns9d73a.bkt.clouddn.com/%E5%9B%BE%E7%89%87%E5%B1%95%E7%A4%BA5" alt=""></div></div></div></div>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-09-02T14:36:04+08:00"
+              content="2016-09-02" >
+          09-02
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+    
+
   </section>
 
   
@@ -397,11 +459,18 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
           
 
           
@@ -594,10 +663,11 @@
 
   
 
+  
   <!-- 背景动画 -->
   <script type="text/javascript" src="/js/src/particle.js"></script>
   <!-- 页面点击小红心 -->
   <!-- <script type="text/javascript" src="/js/src/love.js"></script> -->
-
+  
 </body>
 </html>
